@@ -1,0 +1,89 @@
+/* Center the heading */
+.header {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+    color: #006d77;
+    font-weight: bold;
+}
+
+/* Grid container for cards */
+.grid {
+    background-color: #edf6f9;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 3 columns */
+    gap: 15px;
+    /* Space between cards */
+    padding: 20px;
+    margin: 0 auto;
+    /* Center the grid on the page */
+    max-width: 1200px;
+    /* Limit the width of the grid */
+    box-sizing: border-box;
+    /* Include padding in width */
+}
+
+/* Individual card styling */
+.card {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.1s ease;
+    position: relative;
+    /* For overlay effects */
+    margin: 10px;
+    /* Space between cards */
+}
+
+/* Hover effect for cards */
+.card:hover {
+    transform: translateY(15px);
+    /* Lift the card */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    /* Stronger shadow */
+    border: 1px solid #006d77 ;
+    /* Highlight border */
+}
+
+/* Image styling inside cards */
+.image {
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Title styling */
+.title {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #006d77;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect on title */
+.card:hover .title {
+    color: #83c5be;
+    /* Change text color on hover */
+}
+
+/* Space around the entire page */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+/* Loading text styling */
+.loading {
+    text-align: center;
+    font-size: 20px;
+    margin: 50px 0;
+    color: #666;
+}
+.linkTag{
+    text-decoration: none;
+}

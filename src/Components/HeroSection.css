@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.cover-page {
+    height: 120vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:end;
+    align-items: center;
+    background: url('../images/cook6.avif') no-repeat center center/cover;
+    position: relative;
+}
+
+.content {
+    position: relative;
+    text-align:center;
+    z-index:2;
+    top: -5rem;
+}
+
+.content h1 {
+    color: #006d77;
+    font-size: 4rem;
+    /* margin-left: 28rem; */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.content p {
+    color: #006d77;
+    /* margin-left: 28rem; */
+    /* left: 2%; */
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+    }
+
+    .search-bar input {
+        width: 200px;
+        padding: 10px;
+    }
+
+    .search-bar button {
+        padding: 10px 20px;
+    }
+}

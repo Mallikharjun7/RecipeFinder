@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.single-recipe-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.recipe-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.recipe-image {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: auto;
+}
+
+.recipe-title {
+    flex: 1;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff6f61;
+}
+
+.recipe-details {
+    padding: 1rem;
+}
+
+.recipe-details h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    text-align: center;
+}
+
+.recipe-instructions {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.recipe-video {
+    margin-top: 1.5rem;
+}
+
+.recipe-video h2 {
+    margin-bottom: 1rem;
+}
+
+.recipe-video iframe {
+    width: 80%;
+    /* Adjusted width to fit better */
+    max-width: 600px;
+    /* Maximum width for the video */
+    height: 300px;
+    /* Reduced height */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    /* Center the video */
+    display: block;
+    
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .recipe-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .recipe-title {
+        font-size: 2rem;
+    }
+
+    .recipe-image {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .recipe-video iframe {
+        height: 250px;
+    }
+}
